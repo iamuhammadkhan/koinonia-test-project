@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="poppins_reg.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Side Menu View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuViewController" id="Y6W-OH-hqX" customClass="SideMenuViewController" customModule="koinonia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSQ-Ol-4s4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_header_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Wo3-g4-X9O">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="a3X-Am-eX9">
+                                        <rect key="frame" x="8" y="50" width="398" height="92"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="oRS-kA-B5V">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="MI7-rb-g7Q"/>
+                                                    <constraint firstAttribute="width" constant="80" id="c3m-XD-QfE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zmj-eU-fQM">
+                                                <rect key="frame" x="80" y="0.0" width="318" height="69.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KOINONIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="0L4-Y5-ync">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="43"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="26"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Intimacy | Partnership | Fellowship" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Tuj-k3-qrS">
+                                                        <rect key="frame" x="0.0" y="43" width="270" height="26.5"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Wo3-g4-X9O" secondAttribute="bottom" id="8iX-FI-W1J"/>
+                                    <constraint firstItem="Wo3-g4-X9O" firstAttribute="top" secondItem="VSQ-Ol-4s4" secondAttribute="top" id="9nm-bu-qon"/>
+                                    <constraint firstItem="Wo3-g4-X9O" firstAttribute="leading" secondItem="VSQ-Ol-4s4" secondAttribute="leading" id="KhV-1R-2Uy"/>
+                                    <constraint firstItem="a3X-Am-eX9" firstAttribute="leading" secondItem="VSQ-Ol-4s4" secondAttribute="leading" constant="8" id="Pmg-Kv-6ov"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wo3-g4-X9O" secondAttribute="trailing" id="VdY-Yv-wWE"/>
+                                    <constraint firstAttribute="height" constant="150" id="Zki-F9-1IS"/>
+                                    <constraint firstAttribute="trailing" secondItem="a3X-Am-eX9" secondAttribute="trailing" constant="8" id="aOD-5e-CmS"/>
+                                    <constraint firstAttribute="bottom" secondItem="a3X-Am-eX9" secondAttribute="bottom" constant="8" id="iEp-QF-FAN"/>
+                                    <constraint firstItem="a3X-Am-eX9" firstAttribute="top" secondItem="VSQ-Ol-4s4" secondAttribute="top" constant="50" id="uFP-qh-lqL"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PrK-A2-jbF">
+                                <rect key="frame" x="0.0" y="150" width="414" height="712"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PrK-A2-jbF" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="8mb-mI-ljY"/>
+                            <constraint firstItem="VSQ-Ol-4s4" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="EGE-Lr-P5N"/>
+                            <constraint firstItem="PrK-A2-jbF" firstAttribute="top" secondItem="VSQ-Ol-4s4" secondAttribute="bottom" id="J12-Ye-jkL"/>
+                            <constraint firstItem="PrK-A2-jbF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="OR2-nE-w3O"/>
+                            <constraint firstItem="PrK-A2-jbF" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="PQ2-9o-CGK"/>
+                            <constraint firstItem="VSQ-Ol-4s4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TqH-wd-9R0"/>
+                            <constraint firstItem="VSQ-Ol-4s4" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="lw9-NV-Jjw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appIconImageView" destination="oRS-kA-B5V" id="737-Zz-dqI"/>
+                        <outlet property="appNameLabel" destination="0L4-Y5-ync" id="X1y-Us-CC0"/>
+                        <outlet property="appSloganLabel" destination="Tuj-k3-qrS" id="z40-7D-f3q"/>
+                        <outlet property="tableView" destination="PrK-A2-jbF" id="EXE-ob-WzY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_icon" width="48" height="48"/>
+        <image name="nav_header_bg" width="303.5" height="143.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
